@@ -72,6 +72,9 @@ app.get('/download/:folderName', (req, res) => {
     archive.directory(folderPath, false);
     archive.finalize();
 });
+app.get('/',(req,res)=>{
+    res.send("the app is running read the readme for more details")
+})
 
 app.get('/deleteall', (req, res) => {
    try{
